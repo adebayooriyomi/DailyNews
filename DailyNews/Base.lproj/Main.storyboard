@@ -10,7 +10,7 @@
         <!--Trending Stories-->
         <scene sceneID="Eul-G4-ace">
             <objects>
-                <collectionViewController id="aFp-zv-3qM" customClass="CollectionViewController" customModule="Daily_News" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="aFp-zv-3qM" customClass="CollectionViewController" customModule="DailyNews" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="ux0-2V-CDW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,14 +23,14 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="reuseIdentifier" id="eMx-RG-0jw" customClass="CollectionViewCell" customModule="Daily_News" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="reuseIdentifier" id="eMx-RG-0jw" customClass="CollectionViewCell" customModule="DailyNews" customModuleProvider="target">
                                 <rect key="frame" x="13" y="0.0" width="388" height="376"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="uYS-0K-bT6">
                                     <rect key="frame" x="0.0" y="0.0" width="388" height="376"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tea" translatesAutoresizingMaskIntoConstraints="NO" id="EGB-Ux-zTy">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tea" translatesAutoresizingMaskIntoConstraints="NO" id="EGB-Ux-zTy" customClass="CustomImageView" customModule="DailyNews" customModuleProvider="target">
                                             <rect key="frame" x="8" y="8" width="372" height="178"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="372" id="YUq-fS-TeE"/>

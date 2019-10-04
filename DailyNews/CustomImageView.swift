@@ -53,6 +53,7 @@ class CustomImageView: UIImageView {
     
 }
 
+
 func dateFormat(publishDate: String) -> String{
     
     // Date Formatter Starts HERE
