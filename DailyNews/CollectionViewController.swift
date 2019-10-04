@@ -65,14 +65,19 @@ class CollectionViewController: UICollectionViewController {
         // Configure the cell
         let articleImage = newsArticles[indexPath.row].urlToImage ?? "https://dummyimage.com/600x400/f7f7f7/000000&text=N"
         
+        let img = cell.cImage as! CustomImageView
+        img.loadImageUsingUrlString(articleImage)
+               
         cell.cNewsHeadline.text = newsArticles[indexPath.row].title
-        cell.timePosted.text = newsArticles[indexPath.row].publishedAt
+        
+        let publishDate = newsArticles[indexPath.row].publishedAt ?? ""
+        cell.timePosted.text = dateFormat(publishDate: publishDate)
+        //cell.timePosted.text =  publishDate
+        
         cell.source.text = newsArticles[indexPath.row].author
         cell.cImage.layer.cornerRadius = 8
     
-        let img = cell.cImage as! CustomImageView
-        img.loadImageUsingUrlString(articleImage)
-        
+       
         return cell
     }
 
