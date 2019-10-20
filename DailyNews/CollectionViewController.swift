@@ -31,20 +31,25 @@ class CollectionViewController: UICollectionViewController {
         firstly {
             NewsAPI.getNewsArticles()
         }.done { result in
-            print(result.articles)
             self.newsArticles = result.articles
         }
     }
 
-    /*
+   
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
+        let destination = segue.destination as! WebViewController
+        let cell = sender as! CollectionViewCell
+        let indexPath = self.collectionView.indexPath(for: cell)
+        let url = newsArticles[indexPath!.row].url
+        destination.url = url
+        
     }
-    */
+    
 
     // MARK: UICollectionViewDataSource
 
@@ -69,15 +74,13 @@ class CollectionViewController: UICollectionViewController {
         img.loadImageUsingUrlString(articleImage)
                
         cell.cNewsHeadline.text = newsArticles[indexPath.row].title
+        cell.source.text = newsArticles[indexPath.row].source?.name
+        cell.cImage.layer.cornerRadius = 8
         
         let publishDate = newsArticles[indexPath.row].publishedAt ?? ""
         cell.timePosted.text = dateFormat(publishDate: publishDate)
         //cell.timePosted.text =  publishDate
         
-        cell.source.text = newsArticles[indexPath.row].author
-        cell.cImage.layer.cornerRadius = 8
-    
-       
         return cell
     }
 

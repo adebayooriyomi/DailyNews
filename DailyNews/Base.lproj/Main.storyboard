@@ -3,11 +3,12 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14806.4"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Trending Stories-->
+        <!--Headlines-->
         <scene sceneID="Eul-G4-ace">
             <objects>
                 <collectionViewController id="aFp-zv-3qM" customClass="CollectionViewController" customModule="DailyNews" customModuleProvider="target" sceneMemberID="viewController">
@@ -26,7 +27,7 @@
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="reuseIdentifier" id="eMx-RG-0jw" customClass="CollectionViewCell" customModule="DailyNews" customModuleProvider="target">
                                 <rect key="frame" x="13" y="0.0" width="388" height="376"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="uYS-0K-bT6">
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="TvZ-cW-bP4">
                                     <rect key="frame" x="0.0" y="0.0" width="388" height="376"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -43,7 +44,7 @@
                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="Moa-a0-tUG"/>
                                                 <constraint firstAttribute="height" constant="90" id="chA-KQ-qBT"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -53,7 +54,7 @@
                                                 <constraint firstAttribute="height" constant="17" id="LNh-er-N4w"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 hours ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dIJ-Ex-ZeN">
@@ -69,26 +70,26 @@
                                     <constraints>
                                         <constraint firstItem="OZG-rN-7Am" firstAttribute="top" secondItem="EGB-Ux-zTy" secondAttribute="bottom" constant="13" id="0MP-0R-0R7"/>
                                         <constraint firstItem="OZG-rN-7Am" firstAttribute="top" secondItem="EGB-Ux-zTy" secondAttribute="bottom" constant="13" id="2wF-7O-AMl"/>
-                                        <constraint firstItem="EGB-Ux-zTy" firstAttribute="top" secondItem="uYS-0K-bT6" secondAttribute="top" constant="8" id="6ea-L1-RH8"/>
+                                        <constraint firstItem="EGB-Ux-zTy" firstAttribute="top" secondItem="TvZ-cW-bP4" secondAttribute="top" constant="8" id="6ea-L1-RH8"/>
                                         <constraint firstAttribute="trailing" secondItem="56v-aE-OY9" secondAttribute="trailing" constant="8" id="7pM-LM-5cz"/>
-                                        <constraint firstItem="56v-aE-OY9" firstAttribute="leading" secondItem="uYS-0K-bT6" secondAttribute="leading" constant="8" id="Bgv-zn-OUB"/>
+                                        <constraint firstItem="56v-aE-OY9" firstAttribute="leading" secondItem="TvZ-cW-bP4" secondAttribute="leading" constant="8" id="Bgv-zn-OUB"/>
                                         <constraint firstAttribute="bottom" secondItem="dIJ-Ex-ZeN" secondAttribute="bottom" constant="31" id="DMo-tm-Ijz"/>
                                         <constraint firstAttribute="trailing" secondItem="EGB-Ux-zTy" secondAttribute="trailing" constant="8" id="GNm-l4-Jh9"/>
-                                        <constraint firstItem="EGB-Ux-zTy" firstAttribute="leading" secondItem="uYS-0K-bT6" secondAttribute="leading" constant="8" id="OVT-4u-7f5"/>
+                                        <constraint firstItem="EGB-Ux-zTy" firstAttribute="leading" secondItem="TvZ-cW-bP4" secondAttribute="leading" constant="8" id="OVT-4u-7f5"/>
                                         <constraint firstAttribute="trailing" secondItem="dIJ-Ex-ZeN" secondAttribute="trailing" constant="8" id="Q4y-N7-TL6"/>
                                         <constraint firstAttribute="trailing" secondItem="dIJ-Ex-ZeN" secondAttribute="trailing" constant="8" id="Qxq-6b-4kN"/>
-                                        <constraint firstItem="56v-aE-OY9" firstAttribute="leading" secondItem="uYS-0K-bT6" secondAttribute="leading" constant="8" id="akQ-70-2HS"/>
+                                        <constraint firstItem="56v-aE-OY9" firstAttribute="leading" secondItem="TvZ-cW-bP4" secondAttribute="leading" constant="8" id="akQ-70-2HS"/>
                                         <constraint firstItem="56v-aE-OY9" firstAttribute="top" secondItem="OZG-rN-7Am" secondAttribute="bottom" constant="9" id="eD3-yS-pfI"/>
                                         <constraint firstAttribute="trailing" secondItem="OZG-rN-7Am" secondAttribute="trailing" constant="8" id="eHM-7w-2dB"/>
-                                        <constraint firstItem="dIJ-Ex-ZeN" firstAttribute="leading" secondItem="uYS-0K-bT6" secondAttribute="leading" constant="8" id="eev-By-nVq"/>
-                                        <constraint firstItem="OZG-rN-7Am" firstAttribute="leading" secondItem="uYS-0K-bT6" secondAttribute="leading" constant="8" id="if1-5m-BYw"/>
-                                        <constraint firstItem="EGB-Ux-zTy" firstAttribute="leading" secondItem="uYS-0K-bT6" secondAttribute="leading" constant="8" id="kaP-Re-RKx"/>
-                                        <constraint firstItem="EGB-Ux-zTy" firstAttribute="top" secondItem="uYS-0K-bT6" secondAttribute="top" constant="8" id="kgF-hP-qGB"/>
+                                        <constraint firstItem="dIJ-Ex-ZeN" firstAttribute="leading" secondItem="TvZ-cW-bP4" secondAttribute="leading" constant="8" id="eev-By-nVq"/>
+                                        <constraint firstItem="OZG-rN-7Am" firstAttribute="leading" secondItem="TvZ-cW-bP4" secondAttribute="leading" constant="8" id="if1-5m-BYw"/>
+                                        <constraint firstItem="EGB-Ux-zTy" firstAttribute="leading" secondItem="TvZ-cW-bP4" secondAttribute="leading" constant="8" id="kaP-Re-RKx"/>
+                                        <constraint firstItem="EGB-Ux-zTy" firstAttribute="top" secondItem="TvZ-cW-bP4" secondAttribute="top" constant="8" id="kgF-hP-qGB"/>
                                         <constraint firstItem="dIJ-Ex-ZeN" firstAttribute="top" secondItem="56v-aE-OY9" secondAttribute="bottom" constant="13" id="mQZ-7d-W3b"/>
                                         <constraint firstAttribute="bottom" secondItem="dIJ-Ex-ZeN" secondAttribute="bottom" constant="31" id="pE3-ob-k1I"/>
-                                        <constraint firstItem="OZG-rN-7Am" firstAttribute="leading" secondItem="uYS-0K-bT6" secondAttribute="leading" constant="8" id="qOa-HZ-89r"/>
+                                        <constraint firstItem="OZG-rN-7Am" firstAttribute="leading" secondItem="TvZ-cW-bP4" secondAttribute="leading" constant="8" id="qOa-HZ-89r"/>
                                         <constraint firstAttribute="trailing" secondItem="EGB-Ux-zTy" secondAttribute="trailing" constant="8" id="qbm-w3-CWn"/>
-                                        <constraint firstItem="dIJ-Ex-ZeN" firstAttribute="leading" secondItem="uYS-0K-bT6" secondAttribute="leading" constant="8" id="rgy-nG-Inf"/>
+                                        <constraint firstItem="dIJ-Ex-ZeN" firstAttribute="leading" secondItem="TvZ-cW-bP4" secondAttribute="leading" constant="8" id="rgy-nG-Inf"/>
                                         <constraint firstAttribute="trailing" secondItem="56v-aE-OY9" secondAttribute="trailing" constant="8" id="sKB-f9-dDu"/>
                                         <constraint firstAttribute="trailing" secondItem="OZG-rN-7Am" secondAttribute="trailing" constant="8" id="tl6-mM-rbS"/>
                                         <constraint firstItem="56v-aE-OY9" firstAttribute="top" secondItem="OZG-rN-7Am" secondAttribute="bottom" constant="9" id="uFJ-Jz-SwQ"/>
@@ -98,12 +99,14 @@
                                         <constraint firstItem="56v-aE-OY9" firstAttribute="top" secondItem="OZG-rN-7Am" secondAttribute="bottom" constant="9" id="yUF-B6-Ix4"/>
                                     </constraints>
                                 </collectionViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="customSize" width="388" height="376"/>
                                 <connections>
                                     <outlet property="cImage" destination="EGB-Ux-zTy" id="Fvu-97-3nT"/>
                                     <outlet property="cNewsHeadline" destination="56v-aE-OY9" id="6WA-lW-owJ"/>
                                     <outlet property="source" destination="OZG-rN-7Am" id="eeQ-Hf-0GD"/>
                                     <outlet property="timePosted" destination="dIJ-Ex-ZeN" id="Y44-Ab-0IS"/>
+                                    <segue destination="J3R-Pg-39n" kind="presentation" id="eEc-Mw-F3p"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -112,11 +115,40 @@
                             <outlet property="delegate" destination="aFp-zv-3qM" id="aAN-MY-jOT"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="Trending Stories" largeTitleDisplayMode="always" id="XsJ-Ir-o9a"/>
+                    <navigationItem key="navigationItem" title="Headlines" largeTitleDisplayMode="always" id="XsJ-Ir-o9a"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JdC-fe-rDt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1168.1159420289855" y="140.625"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="KWR-Rl-okr">
+            <objects>
+                <viewController id="J3R-Pg-39n" customClass="WebViewController" customModule="DailyNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ze4-i9-GFr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZYE-9T-gQr">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="4NE-Zc-WE0"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="ZYE-9T-gQr" id="Yod-Zg-Egz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0rj-nA-SRx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2211.594202898551" y="140.625"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6mr-Av-bT2">

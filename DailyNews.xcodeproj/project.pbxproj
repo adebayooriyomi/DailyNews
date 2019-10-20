@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		944D2F76235BC205005F8F4E /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D2F75235BC205005F8F4E /* WebViewController.swift */; };
 		947EA4122346FB9A002A81FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947EA4112346FB9A002A81FE /* AppDelegate.swift */; };
 		947EA4142346FB9A002A81FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947EA4132346FB9A002A81FE /* SceneDelegate.swift */; };
 		947EA4162346FB9A002A81FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947EA4152346FB9A002A81FE /* ViewController.swift */; };
@@ -45,6 +46,7 @@
 /* Begin PBXFileReference section */
 		1391D756DD2012426E9125ED /* Pods_DailyNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EA645B696B2ECFD845EAE55 /* Pods-DailyNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyNews.debug.xcconfig"; path = "Target Support Files/Pods-DailyNews/Pods-DailyNews.debug.xcconfig"; sourceTree = "<group>"; };
+		944D2F75235BC205005F8F4E /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		947EA40E2346FB9A002A81FE /* DailyNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		947EA4112346FB9A002A81FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		947EA4132346FB9A002A81FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				94B29AD323470783009F9930 /* DateFormatter.swift */,
 				94B29ACF23470129009F9930 /* CollectionViewCell.swift */,
 				94B29ACD23470117009F9930 /* CollectionViewController.swift */,
+				944D2F75235BC205005F8F4E /* WebViewController.swift */,
 				94B29AC923470105009F9930 /* NewsAPI.swift */,
 				94B29ACB2347010D009F9930 /* NewsModel.swift */,
 				947EA4172346FB9A002A81FE /* Main.storyboard */,
@@ -349,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94B29ACC2347010D009F9930 /* NewsModel.swift in Sources */,
+				944D2F76235BC205005F8F4E /* WebViewController.swift in Sources */,
 				94B29AD223470145009F9930 /* CustomImageView.swift in Sources */,
 				947EA4162346FB9A002A81FE /* ViewController.swift in Sources */,
 				94B29AD023470129009F9930 /* CollectionViewCell.swift in Sources */,
