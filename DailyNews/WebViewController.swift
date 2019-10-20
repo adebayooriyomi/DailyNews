@@ -18,27 +18,10 @@ class WebViewController: UIViewController, WKNavigationDelegate {
         
         webView.navigationDelegate = self
         // Do any additional setup after loading the view.
-        webView.load(url!)
+        let myURL = URL(string: url!)
+        let myRequest = URLRequest(url: myURL!)
+        webView.load(myRequest)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
-extension WKWebView {
-    func load(_ urlString: String) {
-        if let url = URL(string: urlString) {
-            let request = URLRequest(url: url)
-            load(request)
-        }
-    }
-}
