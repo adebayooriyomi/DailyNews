@@ -1,20 +1,14 @@
 //
-//  CollectionViewCell.swift
-//  Daily News
+//  SelectPublisherCell.swift
+//  DailyNews
 //
-//  Created by Adebayo Oriyomi on 2019-09-25.
+//  Created by Adebayo Oriyomi on 2019-11-06.
 //  Copyright © 2019 Adebayo Oriyomi. All rights reserved.
 //
 
 import UIKit
 
-class CollectionViewCell: UICollectionViewCell {
-    
-    //@IBOutlet weak var cImage: UIImageView!
-    //@IBOutlet weak var cNewsHeadline: UILabel!
-    //@IBOutlet weak var timePosted: UILabel!
-    //@IBOutlet weak var source: UILabel!
-    
+class SelectPublisherCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupViews()
@@ -37,7 +31,7 @@ class CollectionViewCell: UICollectionViewCell {
         let label = UILabel()
         label.text = "Today"
         label.textColor = UIColor.gray
-        label.font = UIFont(name: "HelveticaNeue-CondensedBold", size: 17)
+        label.font = UIFont(name: "HelveticaNeue-CondensedBold", size: 15)
         label.numberOfLines = 1
 
         return label
@@ -46,7 +40,7 @@ class CollectionViewCell: UICollectionViewCell {
     let title: UILabel = {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 17)
-        label.numberOfLines = 3
+        label.numberOfLines = 5
         label.text = ""
         return label
     }()
@@ -63,13 +57,13 @@ class CollectionViewCell: UICollectionViewCell {
     
     fileprivate func setupViews() {
         contentView.addSubview(image)
-        image.frame = CGRect(x: 0, y: 0, width: self.frame.size.width, height: 180)
-        contentView.addSubview(source)
-        source.frame = CGRect(x: 0, y: 190, width: self.frame.size.width, height: 20)
+        image.frame = CGRect(x: 0, y: 0, width: self.frame.size.width, height: 130)
         contentView.addSubview(title)
-        title.frame = CGRect(x: 0, y: 210, width: self.frame.size.width, height: 70)
+        title.frame = CGRect(x: 0, y: 150, width: self.frame.size.width, height: 100)
+        contentView.addSubview(source)
+        source.frame = CGRect(x: 0, y: 130, width: 200, height: 30)
         contentView.addSubview(publishedAt)
-        publishedAt.frame = CGRect(x: 0, y: 285, width: self.frame.size.width, height: 16)
+        publishedAt.frame = CGRect(x: 0, y: 255, width: self.frame.size.width, height: 16)
     }
     
 }

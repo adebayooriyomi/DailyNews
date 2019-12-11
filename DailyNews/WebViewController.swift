@@ -13,6 +13,7 @@ class WebViewController: UIViewController, WKNavigationDelegate {
 
     @IBOutlet weak var webView: WKWebView!
     var url:String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,7 +22,6 @@ class WebViewController: UIViewController, WKNavigationDelegate {
         let myURL = URL(string: url!)
         let myRequest = URLRequest(url: myURL!)
         webView.load(myRequest)
+        
     }
-    
 }
-

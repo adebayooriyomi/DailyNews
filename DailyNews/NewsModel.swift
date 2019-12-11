@@ -9,32 +9,7 @@
 import Foundation
 
 
-//struct Articles: Codable {
-//    var articles: [DailyFeedModel]
-//}
-//
-////Data Model
-//final class DailyFeedModel: NSObject, Codable {
-//
-//    public var title: String = ""
-//    public var author: String?
-//    public var publishedAt: String?
-//    public var urlToImage: String?
-//    public var articleDescription: String?
-//    public var url: String?
-//    public var name: String?
-//
-//
-//
-//    private enum CodingKeys: String, CodingKey {
-//        case articleDescription = "description"
-//        case title, author, publishedAt, urlToImage, url, name
-//
-//    }
-//}
-
-
-struct Articles: Codable {
+struct Articles: Decodable {
     var articles: [DailyFeedModel]
 }
 
@@ -59,3 +34,21 @@ struct Source: Codable {
     public var name: String?
     public var id: String?
 }
+
+
+struct Publisher: Decodable {
+    var sources: [PublisherModel]
+}
+
+//Data Model
+struct PublisherModel: Codable {
+    
+    var id: String?
+    var name: String?
+    var url: String?
+    var category: String?
+    var urlToLogo: String?
+    var sortBysAvailable: String?
+
+}
+
